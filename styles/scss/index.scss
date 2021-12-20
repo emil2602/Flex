@@ -1,0 +1,58 @@
+@import "./variables";
+@import "./core";
+
+    h1 {
+        padding: 30px 0;
+        text-align: center;
+    }
+
+    main {
+        font-size: calc(12px + .7vw);
+        margin: 0 20px;
+
+        @media (min-width: $tablet-width) {
+            display: flex;
+        }
+    }
+
+    .content {
+
+        @media (min-width: $tablet-width) {
+            width: 65%;
+            margin-right: 40px;
+        }
+
+        @media (min-width: $desktop-width) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        div {
+            background-color: $main-content-color;
+            border: $blocks-border;
+
+
+            @media (min-width: $desktop-width) {
+                width: 50%;
+            }
+
+            p {
+                text-align: center;
+                padding: 5em;
+            }
+        }
+    }
+
+    aside {
+        padding: 20px;
+        border: $blocks-border;
+
+        @media (min-width: $tablet-width) {
+            width: 35%;
+        }
+    }
+
+
+
+
+
